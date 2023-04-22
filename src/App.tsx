@@ -1,4 +1,5 @@
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 // import ListGroup from "./components/ListGroup";
 
 // ListGroup;
@@ -6,9 +7,7 @@ import Alert from "./components/Alert";
 function App() {
   return (
     <div>
-      <Alert>
-        Hello <span> World </span>
-      </Alert>
+      <Button onClick={() => console.log("Clicked")}>My button</Button>
     </div>
   );
 }
