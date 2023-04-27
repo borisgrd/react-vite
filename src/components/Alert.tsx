@@ -5,7 +5,12 @@ interface Props {
 }
 
 const Alert = ({ children }: Props) => {
-  return <div className="alert alert-primary">{children}</div>;
+  return (
+    <div className="alert alert-primary alert-dismissable">
+      {children}
+      <button type="button" class="btn-close" data-bs-dismiss></button>
+    </div>
+  );
 };
 
 export default Alert;
